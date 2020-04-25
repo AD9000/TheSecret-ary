@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Server that runs the data collector",
+  "main": "index.js",
+  "author": "AD9000",
+  "license": "None",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./index.js --exec babel-node -e js",
+    "scraper": "node ./scraper.js --exec babel-node -e js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.6",
+    "nodemon": "^2.0.2",
+    "puppeteer": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}

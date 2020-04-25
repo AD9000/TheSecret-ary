@@ -1,0 +1,511 @@
+commit 4abc685936bcf7d3214a5e32f95dfb0d0641ec3f
+Author: Atharv Damle <damle.atharv16@gmail.com>
+Date:   Tue Apr 21 23:56:49 2020 +1000
+
+    Add contract
+
+ ...Hungry Terms and Conditions - Redacted - Signed.pdf | Bin 0 -> 156254 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 658865b7143203a373c5cbfda42810f8df67a827
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 23:59:01 2020 +1000
+
+    code cleanup round 2
+
+ frontend/src/components/Display.js |  12 --
+ scraper/scrapeFb.ts                |   1 -
+ scraper/scrapeLinkedIn.ts          |   5 -
+ scraper/writeToDb.ts               | 278 -------------------------------------
+ 4 files changed, 296 deletions(-)
+
+commit f02d5ddb0c1229281b49106a37f9fe6c028c4d74
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 23:45:26 2020 +1000
+
+    code cleanup
+
+ scraper/scrapeFb.ts       | 63 +----------------------------------------------
+ scraper/scrapeLinkedIn.ts | 27 --------------------
+ 2 files changed, 1 insertion(+), 89 deletions(-)
+
+commit e55c5c214d8a872668589dfbd65eb2c11024fa2f
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 23:42:38 2020 +1000
+
+    had forgotten this file
+
+ frontend/src/components/Display.js  | 308 ++++++++++++++++++++++++++++++++++++
+ frontend/src/components/display.css |   3 +
+ 2 files changed, 311 insertions(+)
+
+commit fdba751671902277ddd8e3fb123202578fe36243
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 21:20:30 2020 +1000
+
+    ui complete
+
+ backend/index.js                         |  10 +-
+ frontend/package.json                    |   1 +
+ frontend/public/index.html               |   6 +-
+ frontend/src/App.js                      |   2 +-
+ frontend/src/components/Form.js          | 695 ++++++++++++++++++++++++++++++-
+ frontend/src/components/Header.js        |   6 +-
+ frontend/src/components/SiteContainer.js |   6 +-
+ frontend/src/index.css                   |  12 +-
+ frontend/src/index.js                    |  12 +-
+ frontend/yarn.lock                       |  12 +
+ 10 files changed, 736 insertions(+), 26 deletions(-)
+
+commit 0df7b93fdb3fca81855abd4e5b78b4bc7ccc640e
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 17:11:06 2020 +1000
+
+    test runner ready
+
+ scraper/dbApi.ts     |  12 +--
+ scraper/scrapeFb.ts  |   2 +-
+ scraper/writeToDb.ts | 250 +++++++++++++++++++++++++++++++++++----------------
+ 3 files changed, 178 insertions(+), 86 deletions(-)
+
+commit 8985f00229ccb041a1ca346fda3cfdcbc7e4d45c
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 03:17:33 2020 +1000
+
+    completed dbapi writes, updated scrapers
+
+ scraper/scrapeFb.ts       |  9 +++--
+ scraper/scrapeLinkedIn.ts | 16 ++++----
+ scraper/writeToDb.ts      | 93 ++++++++++++++++++++++++++++-------------------
+ 3 files changed, 68 insertions(+), 50 deletions(-)
+
+commit 360fbd72d55deba1a64ed097b07464c3e4d9860d
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 03:16:25 2020 +1000
+
+    updated gitignore, completed backend route and api
+
+ backend/.gitignore |  3 ++-
+ backend/dbApi.js   | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ backend/index.js   |  3 ++-
+ 3 files changed, 53 insertions(+), 2 deletions(-)
+
+commit ff7307f98379615065405adcc32ebf9ba56ec6a9
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 01:41:45 2020 +1000
+
+    added gitignore
+
+ scraper/.gitignore | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 19e439747639a8420103b8dc17be832fd9866d22
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 01:41:14 2020 +1000
+
+    updated packages
+
+ scraper/package.json | 1 +
+ scraper/yarn.lock    | 5 +++++
+ 2 files changed, 6 insertions(+)
+
+commit 17653857f27ed392061e5911da162f259e5894e5
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 01:40:53 2020 +1000
+
+    scraper api to write data to db
+
+ scraper/dbApi.ts      |  62 ++++++++++++
+ scraper/tsconfig.json |   7 ++
+ scraper/writeToDb.ts  | 270 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 339 insertions(+)
+
+commit e2cbd63ad008f47fd82a09206d939d97fda5eba0
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 01:39:19 2020 +1000
+
+    added interfaces
+
+ scraper/scrapeLinkedIn.ts | 25 ++++++++++++++++++++++++-
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+
+commit fcb69f14838fc0ed30759b6c1b24b67dacaaf1e8
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Tue Apr 14 00:20:08 2020 +1000
+
+    stability fixes and completion of linkedin scraper
+
+ scraper/package.json      |   5 ++-
+ scraper/scrapeLinkedIn.ts | 105 ++++++++++++++++++++++++++++++----------------
+ scraper/yarn.lock         |  90 ++++++++++++++++++++++++++++++++++++++-
+ 3 files changed, 161 insertions(+), 39 deletions(-)
+
+commit cee5e0dab4799e12637d51e8f72348ef125a5bfe
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Mon Apr 13 23:45:12 2020 +1000
+
+    uncommented stuff after tests
+
+ scraper/scrapeFb.ts | 24 ++++++++++++------------
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+
+commit 763e79a9f8ca1cc2d83782dbae63eb7224149bef
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Mon Apr 13 23:43:08 2020 +1000
+
+    all tests on fb complete. Only combined testing left
+
+ scraper/scrapeFb.ts | 113 ++++++++++++++++++++++++++++++++++------------------
+ 1 file changed, 74 insertions(+), 39 deletions(-)
+
+commit 43a1bb93f3fb0e5a119e4febb0c303dd266f277b
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Mon Apr 13 23:07:56 2020 +1000
+
+    tested scraper different situations, works.
+
+ scraper/scrapeFb.ts | 118 +++++++++++++++++++++++++++++++++++++---------------
+ 1 file changed, 85 insertions(+), 33 deletions(-)
+
+commit 24d3747f898e5c1a17daf7d5b38a3117dc6b7fb6
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Mon Apr 13 18:01:18 2020 +1000
+
+    communication check
+
+ backend/index.js                | 21 ++++++++++-----------
+ frontend/package.json           |  3 ++-
+ frontend/src/components/Form.js |  8 ++++++++
+ 3 files changed, 20 insertions(+), 12 deletions(-)
+
+commit a5f64d5b9e3a2412ba64199d50a899818af98bd6
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Mon Apr 13 17:42:15 2020 +1000
+
+    form page up
+
+ frontend/package.json                    |   2 +
+ frontend/src/App.js                      |  36 ++++++---
+ frontend/src/components/Form.js          |  54 +++++++++++++
+ frontend/src/components/Header.js        |   8 ++
+ frontend/src/components/NotFound.js      |   7 ++
+ frontend/src/components/SiteContainer.js |  14 ++++
+ frontend/yarn.lock                       | 135 ++++++++++++++++++++++++++++++-
+ 7 files changed, 244 insertions(+), 12 deletions(-)
+
+commit 0f77b8a83f59a14d09b7d081055c18140909b453
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Mon Apr 13 16:33:21 2020 +1000
+
+    grabbed them skillz
+
+ scraper/scrapeLinkedIn.ts | 205 +++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 148 insertions(+), 57 deletions(-)
+
+commit 5f4d0eb5f76cb38ba2dc60c16bdcee2c2db987e5
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Mon Apr 13 14:34:46 2020 +1000
+
+    Updated linkedin scraper. Skills untested, accomplishments, contact info to go
+
+ scraper/scrapeLinkedIn.ts | 383 +++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 378 insertions(+), 5 deletions(-)
+
+commit 9f81b022ad82ed9728c057ab87b5eb4da4980280
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 20:01:29 2020 +1000
+
+    purged rogue console.logs
+
+ scraper/scrapeFb.ts | 225 +---------------------------------------------------
+ 1 file changed, 1 insertion(+), 224 deletions(-)
+
+commit 80f38f28e6c13ff49786b07ed2de5ed8eef4e3da
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 19:57:49 2020 +1000
+
+    more bug fixes
+
+ scraper/scrapeFb.ts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 7a75e7ef30d69553d9fea8b0819c4da8b7c32e58
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 19:50:45 2020 +1000
+
+    bug fix
+
+ scraper/scrapeFb.ts | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit a07efc21392ebe9256adde8bcec8c8f3dc73ce8b
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 19:35:08 2020 +1000
+
+    facebook scraper completed
+
+ scraper/scrapeFb.ts | 142 ++++++++++++++++++++++++++++++++--------------------
+ 1 file changed, 89 insertions(+), 53 deletions(-)
+
+commit 81b9817785b7ada6e88427fe0b5e932b27b4b98b
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 18:21:47 2020 +1000
+
+    about works
+
+ scraper/scrapeFb.ts | 200 ++++++++++++++++++++++++++++++++++++++--------------
+ 1 file changed, 148 insertions(+), 52 deletions(-)
+
+commit 62a8850b236ce7cd005519dc5fbb221c67e1f723
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 18:21:37 2020 +1000
+
+    added flatten
+
+ scraper/package.json |  1 +
+ scraper/yarn.lock    | 12 ++++++++++++
+ 2 files changed, 13 insertions(+)
+
+commit 74d6b63a511e26df3f86fc6a9142b1a450846664
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 16:35:41 2020 +1000
+
+    scraping friends. Not tested
+
+ scraper/scrapeFb.ts | 100 ++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 86 insertions(+), 14 deletions(-)
+
+commit ad75bd56add0fb272cb34d86f3d51e5fa905f008
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 14:58:42 2020 +1000
+
+    scrapes about. Back to not knowing whether it works or not :)
+
+ scraper/scrapeFb.ts | 215 ++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 209 insertions(+), 6 deletions(-)
+
+commit a90707e7b30c71e607f4c4a91d6ee94508172448
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Apr 12 12:07:28 2020 +1000
+
+    can scrape cover photos now
+
+ scraper/scrapeFb.ts | 121 +++++++++++++++++++++++++++++++++++++++++++++++++---
+ 1 file changed, 115 insertions(+), 6 deletions(-)
+
+commit 9aa14592437e61a1c0cb41a1be76e7b9ed7447b8
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sat Apr 11 21:58:32 2020 +1000
+
+    bug fixes, profile pic scraping finally complete
+
+ scraper/scrapeFb.ts | 403 +++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 274 insertions(+), 129 deletions(-)
+
+commit b63c06d4d2a13fe15eb46c11b7f6bb75fdc6b325
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sat Apr 11 14:36:47 2020 +1000
+
+    added profile link for recursive scraping
+
+ scraper/scrapeFb.ts | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit 8fc3bc508fa4aad66f706fef748bec96d26686ec
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sat Apr 11 14:32:09 2020 +1000
+
+    scraper can now get the reacts on a post and classify them
+
+ scraper/scrapeFb.ts | 208 ++++++++++++++++++++++++++++++++++++++--------------
+ 1 file changed, 151 insertions(+), 57 deletions(-)
+
+commit 31ede8ebe69a1c121fb419cd2a61ed52a6892b86
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sat Apr 11 14:31:50 2020 +1000
+
+    added script for running tests
+
+ scraper/package.json | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 78fe3e0202d83870e9a4c1bfd93274561e7d57c7
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Fri Apr 10 21:54:23 2020 +1000
+
+    fixed bug. Moved on to comment and react scraping.
+
+ scraper/scrapeFb.ts | 327 +++++++++++++++++++++++++++++++++-------------------
+ 1 file changed, 211 insertions(+), 116 deletions(-)
+
+commit 79a01c36f2053e75c51bdd43b09dbedb619b830f
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Thu Apr 9 02:52:11 2020 +1000
+
+    updated scraper to handle multiple profile pictures. Facing weird bug
+
+ scraper/scrapeFb.ts | 181 +++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 165 insertions(+), 16 deletions(-)
+
+commit 05e1fdcdbdef0bab88d1e72f85262f8c160c4cfa
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Wed Apr 8 18:38:34 2020 +1000
+
+    much better fb scraper. Gets the profile pic, although with some difficulty
+
+ scraper/scrapeFb.ts | 107 ++++++++++++++++++++++++++++++++++++++++++++++++----
+ scraper/yarn.lock   |  25 ++++++++++--
+ 2 files changed, 120 insertions(+), 12 deletions(-)
+
+commit d6a573a0cc5d254091200cc9e45eb96f294cc1dd
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Wed Apr 8 18:38:03 2020 +1000
+
+    updated and cleaned package.json
+
+ scraper/package.json | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit c394e5b5cca2888aa2809d9d05b0be9cc5b81bb8
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Mar 29 18:18:23 2020 +1100
+
+    Added basic scraper for linkedin. can search for people
+
+ scraper/scrapeLinkedIn.ts | 95 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 95 insertions(+)
+
+commit 424d7f08f74a74be43bcbc549c194d31210674a1
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Mar 29 18:17:53 2020 +1100
+
+    separated scripts for different scrapers
+
+ scraper/package.json | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 31ae005535046cd719dd6c8daf4193ee95d0f77b
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Sun Mar 29 13:47:03 2020 +1100
+
+    separated fb and complete scraper
+
+ scraper/scrapeFb.ts | 76 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ scraper/scraper.ts  | 73 ++------------------------------------------------
+ 2 files changed, 78 insertions(+), 71 deletions(-)
+
+commit b4f40820ab7dcbe6de06143ef5cb0cf6790a7929
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Fri Mar 27 21:49:56 2020 +1100
+
+    created scraper for facebook
+
+ .gitignore            |   2 +-
+ backend/package.json  |   2 +-
+ backend/scraper.js    |  51 +++++++-
+ frontend/package.json |   2 +
+ frontend/src/App.js   |  21 +--
+ frontend/yarn.lock    | 103 ++++++++++++++-
+ scraper/.prettierrc   |   4 +
+ scraper/package.json  |  14 ++
+ scraper/scraper.ts    |  74 +++++++++++
+ scraper/yarn.lock     | 357 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 10 files changed, 608 insertions(+), 22 deletions(-)
+
+commit 07620b7ca99604f4faf3e5a6402aee13293ddd3b
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Mon Mar 9 22:38:44 2020 +1100
+
+    removed typescript, added backend
+
+ LICENSE                                            |   21 -
+ README.md                                          |   11 -
+ backend/.babelrc                                   |    6 +
+ backend/.gitignore                                 |    1 +
+ backend/index.js                                   |   17 +
+ backend/package.json                               |   23 +
+ backend/scraper.js                                 |   16 +
+ backend/yarn.lock                                  | 3354 ++++++++++++++++++++
+ frontend/.gitignore                                |   23 +
+ frontend/README.md                                 |   68 +
+ package.json => frontend/package.json              |   13 +-
+ {public => frontend/public}/favicon.ico            |  Bin
+ {public => frontend/public}/index.html             |    0
+ {public => frontend/public}/logo192.png            |  Bin
+ {public => frontend/public}/logo512.png            |  Bin
+ {public => frontend/public}/manifest.json          |    0
+ {public => frontend/public}/robots.txt             |    1 +
+ {src => frontend/src}/App.css                      |    0
+ src/App.tsx => frontend/src/App.js                 |    4 +-
+ src/App.test.tsx => frontend/src/App.test.js       |    0
+ {src => frontend/src}/index.css                    |    0
+ src/index.tsx => frontend/src/index.js             |    0
+ {src => frontend/src}/logo.svg                     |    0
+ .../src/serviceWorker.js                           |   26 +-
+ src/setupTests.ts => frontend/src/setupTests.js    |    0
+ yarn.lock => frontend/yarn.lock                    |  511 +--
+ src/react-app-env.d.ts                             |    1 -
+ tsconfig.json                                      |   25 -
+ 28 files changed, 3813 insertions(+), 308 deletions(-)
+
+commit 875fae2536f1acac8c02c9517d833052804cc6fe
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Fri Feb 14 14:19:01 2020 +1100
+
+    ts update
+
+ package.json                               |  7 ++++++-
+ public/robots.txt                          |  1 -
+ src/{App.test.js => App.test.tsx}          |  0
+ src/{App.js => App.tsx}                    |  4 ++--
+ src/{index.js => index.tsx}                |  0
+ src/react-app-env.d.ts                     |  1 +
+ src/{serviceWorker.js => serviceWorker.ts} | 16 ++++++++++++----
+ src/{setupTests.js => setupTests.ts}       |  0
+ tsconfig.json                              | 25 +++++++++++++++++++++++++
+ yarn.lock                                  | 23 ++++++++++++++++++++---
+ 10 files changed, 66 insertions(+), 11 deletions(-)
+
+commit 4fa4db3621ad84a70978b5049b46646fba4c0d7e
+Author: AD9000 <damle.atharv16@gmail.com>
+Date:   Fri Feb 14 14:12:41 2020 +1100
+
+    init
+
+ .gitignore           |    23 +
+ package.json         |    34 +
+ public/favicon.ico   |   Bin 0 -> 3150 bytes
+ public/index.html    |    43 +
+ public/logo192.png   |   Bin 0 -> 5347 bytes
+ public/logo512.png   |   Bin 0 -> 9664 bytes
+ public/manifest.json |    25 +
+ public/robots.txt    |     3 +
+ src/App.css          |    38 +
+ src/App.js           |    26 +
+ src/App.test.js      |     9 +
+ src/index.css        |    13 +
+ src/index.js         |    12 +
+ src/logo.svg         |     7 +
+ src/serviceWorker.js |   137 +
+ src/setupTests.js    |     5 +
+ yarn.lock            | 10510 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 17 files changed, 10885 insertions(+)
+
+commit 5242617a3bb08f3899e9aa54c95fc1b67523d45b
+Author: Atharv Damle <damle.atharv16@gmail.com>
+Date:   Fri Feb 14 14:07:48 2020 +1100
+
+    Update README.md
+
+ README.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 488847905ddea61dc696739dd84b9298c28b6ffd
+Author: Atharv Damle <damle.atharv16@gmail.com>
+Date:   Fri Feb 14 12:42:13 2020 +1100
+
+    Initial commit
+
+ LICENSE   | 21 +++++++++++++++++++++
+ README.md |  2 ++
+ 2 files changed, 23 insertions(+)
