@@ -19,5 +19,5 @@ You'll find a link to download your data at the bottom of the page
 ### I am not licensing this software to anyone for any purpose whatsoever other than to understand the extent of their data leakage by running it on himself/herself. I am not responsible for actions of anyone using it.
 
 But here's what you need if you want to use it.
-1. A facebook and a linkedin account (an anonymous one prefereably, should not be your friend/connection)
-2. A mongodb atlas database
+1. A facebook and a linkedin account (an anonymous one preferably, should not be your friend/connection)
+2. A mongodb atlas database key
