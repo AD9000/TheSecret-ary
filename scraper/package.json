@@ -9,7 +9,7 @@
   "dependencies": {
     "@types/mongodb": "^3.5.5",
     "copy-dir": "^1.2.0",
-    "flat": "^5.0.0",
+    "flat": "^5.0.1",
     "jquery": "^3.4.1",
     "mongodb": "^3.5.5",
     "puppeteer": "^2.1.1",
